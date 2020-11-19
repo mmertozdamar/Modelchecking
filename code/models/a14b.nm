@@ -1,0 +1,12 @@
+mdp
+
+module a14b
+    s : [0..1] init 0;
+
+    [] s=0 -> (s'=0);
+    [] s=0 -> (s'=1);
+    [] s=1 -> (s'=1);
+
+endmodule
+
+label "phi" = s=0;
